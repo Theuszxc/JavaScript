@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipo de Dia</title>
+</head>
+<body>
+    <script>
+        let dia = prompt("Digite o nome de um dia da semana:").toLowerCase().trim();
+
+        if (dia === "segunda-feira" || dia === "terca-feira" || dia === "terça-feira" ||
+            dia === "quarta-feira" || dia === "quinta-feira" || dia === "sexta-feira") {
+            alert("É um dia útil.");
+        } else if (dia === "sabado" || dia === "sábado" || dia === "domingo") {
+            alert("É fim de semana.");
+        } else {
+            alert("Dia inválido. Digite corretamente (ex: segunda-feira).");
+        }
+    </script>
+</body>
+</html>

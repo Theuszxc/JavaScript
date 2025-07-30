@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Temperatura</title>
+</head>
+<body>
+    <script>
+        let temp = Number(prompt("Digite a temperatura em graus Celsius:"));
+
+        if (isNaN(temp)) {
+            alert("Valor inválido. Digite uma temperatura numérica.");
+        } else if (temp < 18) {
+            alert("Está frio.");
+        } else if (temp <= 28) {
+            alert("O clima está agradável.");
+        } else {
+            alert("Está quente.");
+        }
+    </script>
+</body>
+</html>

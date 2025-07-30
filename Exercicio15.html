@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto por Faixa Etária</title>
+</head>
+<body>
+    <script>
+        let idade = Number(prompt("Digite sua idade: "));
+        let valorProduto = Number(prompt("Digite o valor do produto: "));
+        let desconto;
+
+        if (idade <= 12) {
+            desconto = valorProduto * 0.2;
+            document.write("Você tem direito a 20% de desconto! Valor com desconto: R$" + (valorProduto - desconto));
+        } else if (idade >= 13 && idade <= 59) {
+            desconto = valorProduto * 0.1;
+            document.write("Você tem direito a 10% de desconto! Valor com desconto: R$" + (valorProduto - desconto));
+        } else {
+            desconto = valorProduto * 0.3;
+            document.write("Você tem direito a 30% de desconto! Valor com desconto: R$" + (valorProduto - desconto));
+        }
+    </script>
+</body>
+</html>
